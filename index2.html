@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ethan Martin's Portfolio</title>
+<link href="css/singlePageTemplate.css" rel="stylesheet" type="text/css">
+<!--The following script tag downloads a font from the Adobe Edge Web Fonts server for use within the web page. We recommend that you do not modify it.-->
+<script>var __adobewebfontsappname__="dreamweaver"</script>
+<script src="http://use.edgefonts.net/source-sans-pro:n2:default.js" type="text/javascript"></script>
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<!-- Main Container -->
+<div class="container"> 
+  <!-- Navigation -->
+  <header> <a href="">
+    <h4 class="logo">Ethan Martin</h4>
+    </a>
+    <nav>
+      <ul>
+        <li><a href="http://emmartin.epizy.com/page2/">Module 3</a></li>
+        <li><a href="http://emmartin.epizy.com/page3/">JS Form</a></li>
+        <li> <a href="#contact">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <h2 class="hero_header">Information <span class="light">Architect</span></h2>
+    <p class="tagline">Data Scientist</p>
+  </section>
+  <!-- About Section -->
+  <section class="about" id="about">
+    <h2 class="hidden">About</h2>
+    <p class="text_column">This is the first attempt at making a website using a template for my Web Design Technologies class. </p>
+    <p class="text_column">Obviously there are some things that need to be adjusted still but this should be a good start!</p>
+    <p class="text_column">This will be the part of the website dedicated to explaining my educational focus. </p>
+  </section>
+  <h1 class="javah1">Below is some javascripting I am working on for class</h1>
+<div id="date">
+	<script>
+    var now  = new Date();        // current date/time
+    var hrs  = now.getHours();    // 0 to 23
+    
+    document.writeln("<h2>It is " + now + "</h2>");
+     
+    if (hrs >= 21) {
+      document.writeln("<h2>It's getting late!</h2>");
+    } else if (hrs >= 18) {
+      document.writeln("<h2>Good Evening!</h2>");
+    } else if (hrs >= 12) {
+      document.writeln("<h2>Good Afternoon!</h2>");
+    } else if (hrs >= 8) {
+      document.writeln("<h2>Good Morning!</h2>");
+    } else {
+      document.writeln("<h2>It's Pretty Early!</h2>");
+    }
+  </script>
+	</div>
+	<div id="BLM">
+	  <h1>DC Mayor Paints Black Lives Matter on the Road Leading to the White House </h1>
+    		<img src="images/BLMweb.jpg" width="930" height="524" alt=""/> 
+	  <h1>Protestors Paint Defund The Police on the Road Leading to the White House </h1>	
+			<img src="images/Defund-The-Police.jpg" width="930" height="488" alt=""/>
+	  <h1>Occupant of White House </h1>
+			<img src="images/Trump-CSPAN.jpg" width="930" height="529" alt=""/>
+	  <h1>Everytime I Look At The News</h1>
+    <img src="images/Right-Now-I-Am-Feeling-Funny-Sad-Meme.jpg" width="930" height="696" alt=""/> 
+	</div>
+	
+<!-- Working on a nickname generator---------------------------
+	
+	<div id="nickname">
+	
+	<script>
+	function generate(){
+		var adj = ['narrow', 'nebulous', 'useless', 'oafish', 'subdued', 'grandiose', 'tangy', 'gigantic', 'ablaze', 'upset', 'mundane', 'evanescent', 'unruly, 'anxious', 'obtainable', 'tense', 'material', 'ripe', 'hurried', 'flimsy', 'pushy', 'ill-fated', 'futuristic', 'nondescript', 'mixed', 'oval, 'synonymous', 'truthful', 'superb', 'uptight', 'callous', 'difficult', 'industrious', 'untidy', 'various', 'harsh', 'roomy', 'verdant', 'dysfunctional', 'shivering', 'grotesque', 'slimy', 'lamentable', 'shrill', 'maddening', 'didactic', 'abstracted', 'common', 'rainy', 'decorous'];
+		var noun = ['ice', 'stone', 'texture', 'silk', 'apparel', 'button', 'account', 'lunchroom', 'border', 'honey', 'library', 'office', 'behavior', 'receipt', 'kettle', 'government', 'porter', 'hair', 'sea', 'creator', 'bird', 'time', 'hand', 'potato', 'stocking', 'queen', 'fear', 'camp', 'mark', 'ocean', 'drink', 'turkey', 'play', 'spoon', 'screw', 'fireman', 'dog', 'language', 'spatula', 'wool', 'division', 'tail', 'error', 'cows', 'low', 'metal', 'orange', 'jam', 'daughter', 'kick'];
+		var rand_adj = Math.floor(Math.random()*adj.length);
+		var rand_noun = Math.floor(Math.random()*noun.length);
+		document.getElementById("result").innerHTML = "<h2>Your New Nick Name is" + adj[rand_adj] + noun[rand_noun] + "!</h2>";
+	}
+	</script>
+	
+	</div>
+	<button id="nicknamer" onClick="generate()">Generate Nick Name</button>
+	<div id="result"></div>
+	
+		
+	
+	
+	
+	
+	<!-- Everything Past this point has not been modified -->
+	
+	
+	<!-- Stats Gallery Section -----------------------------------------------------------
+  <div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">1500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">2300</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">7500</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">9870</h1>
+      <h4>TITLE</h4>
+      <p>One line description</p>
+    </div>
+  </div>
+  <!-- Parallax Section --------------------------------------------------------
+  <section class="banner">
+    <h2 class="parallax">PARALLAX HERO</h2>
+    <p class="parallax_description">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+  </section>
+  <!-- More Info Section --------------------------------------------------------
+  <footer>
+    <article class="footer_column">
+      <h3>ABOUT</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+    <article class="footer_column">
+      <h3>LOCATION</h3>
+      <img src="images/placeholder.jpg" alt="" width="400" height="200" class="cards"/>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla </p>
+    </article>
+  </footer>
+  <!-- Footer Section ------------------------------------------------------------------
+  <section class="footer_banner" id="contact">
+    <h2 class="hidden">Footer Banner Section </h2>
+    <p class="hero_header">FOR THE LATEST NEWS &amp; UPDATES</p>
+    <div class="button">subscribe</div>
+  </section>
+  <!-- Copyrights Section ----------------------------------------------------------------
+  <div class="copyright">&copy;2019- <strong>Light Theme</strong></div>
+</div>
+<!-- Main Container Ends -->
+	
+</body>
+</html>

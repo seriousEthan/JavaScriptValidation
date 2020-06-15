@@ -1,0 +1,54 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+</head>
+
+<body>
+	<form method="GET" action="example/message.html">
+  		<p>Name: <input type="text" name="name"></p>
+  		<p>Message:<br><textarea name="message"></textarea></p>
+  		<p><button type="submit">Send</button></p>
+		<p><input type="text" value="abc"> (text)</p>
+		<p><input type="password" value="abc"> (password)</p>
+		<p><input type="checkbox" checked> (checkbox)</p>
+		<p><input type="radio" value="A" name="choice">
+   		<input type="radio" value="B" name="choice" checked>
+   		<input type="radio" value="C" name="choice"> (radio)</p>
+		<p><input type="file"> (file)</p>
+		<select>
+  		<option>Pancakes</option>
+  		<option>Pudding</option>
+  		<option>Ice cream</option>
+</select>
+	</form>
+	
+	
+	
+</body>
+</html>
+
+
+
+.form button {
+	background-color: #005432;
+	border: 2px solid #005432;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	font-size: 16px;
+	padding: 10px;
+	width: 100%;
+}
+
+
+let messages = []
+	if (name.value === '' || name.value == null){
+		messages.push('Name is Required')
+	}
+	
+	if (messages.length > 0) {
+	e.preventDefault()
+	errorElement.innerText = messages.join(', ')
+	}

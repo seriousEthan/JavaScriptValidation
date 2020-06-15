@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Form</title>
+	<script defer src="../scripts.js"></script>
+<link rel="stylesheet" href="../font-awesome-4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<div class="container">
+		<div class="header">
+		<h2>Check Out My Awesome Form!</h2>
+		</div>
+		<form id="form"  method="get" enctype="multipart/form-data">
+			<div class="form-control">
+				<label for="name">What is Your Name?*</label>
+				<input type= "text" name="name" id="name" placeholder="They call me ________">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="color">What is Your Favorite Color?</label>
+				<input type="color" name="color" id="color">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="velocity">What is the air-speed velocity of an unladen swallow?</label>
+				<input type="text" name="velocity" id="velocity" placeholder="African or European?">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="email">What is Your Email Address?*</label>
+				<input type= "email" name="email" id="email" placeholder="user@gmail.com">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="bday">What is Your Birthday?*</label>
+				<input type="date" name="bday" id="bday">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="phone">What is Your Phone Number?*</label>
+				<input type="tel" name="phone" id="phone" placeholder="5554443333">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="shoe">What is Your Shoe Size?</label>
+				<input type="number" name="shoe" id="shoe" placeholder="12">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+
+			<div class="form-control">
+				What is Your Gender?*
+				<div>
+				<label for="male">Male</label>
+				<input type="radio" name="gender" id="male" value="male">
+				</div>
+				<div>
+				<label for="female">Female</label>
+				<input type="radio" name="gender" id="female" value="female">
+				</div>
+				<div>
+				<label for="pnr">Prefer Not to Respond</label>
+				<input type="radio" name="gender" id="pnr" value="pnr">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+				</div>
+			</div>
+			<div class="form-control">
+				<label for="eyecolor">What is Your Eye Color?</label>
+				<select name="eyecolor" id="eyecolor">
+					<option label="Green" value="Green"></option>
+					<option label="Amber" value="Amber"></option>
+					<option label="Red/Violet" value="Red/Violet"></option>
+					<option label="Black" value="Black"></option>
+					<option label="Blue" value="Blue"></option>
+					<option label="Grey" value="Grey"></option>
+					<option label="Hazel" value="Hazel"></option>
+					<option label="Brown" value="Brown"></option>
+				</select>
+			</div>
+			<div class="form-control">
+				<label for="comments">Do You Have Anything Else You'd Like Me to Know?</label><br>
+				<textarea id="comments" name="comments" placeholder="Please Put Any Additional Comments or Information Here."></textarea>
+			</div>
+			<div class="form-control">
+				<label for="password">What Would You Like Your Password to Be?*</label>
+				<input type="password" name="password" id="password" placeholder="Password">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<div class="form-control">
+				<label for="passwordchk">Please Re-Enter Your Password.*</label>
+				<input type="password" name="passwordchk" id="passwordchk" placeholder="Re-Enter Password">
+				<i class="fa fa-check-circle"></i>
+				<i class="fa fa-exclamation-circle"></i>
+				<small>Error Message</small>
+			</div>
+			<input type="hidden" name="hidden" value="This is a hidden input.  The user can not see or interact with it">
+			<div class="form-control">
+				<label for="file">Would You Like to Send Me a File?</label>
+				<input type="file" id="file" name="file">
+			</div>
+			<div class="form-control">
+				<label for="url">Would You Like to Send Me a URL?</label>
+				<input type="url" id="url" name="url">
+			</div>
+			<div>
+				<button id="reset" type="reset">Reset</button>
+				<button id="submit" type="submit">Submit</button>
+			</div>
+	</form>
+</div>
+
+</body>
+</html>
